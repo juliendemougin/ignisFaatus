@@ -1,0 +1,7 @@
+@function pxToRem($pixels, $fontSize: 16) {
+  @return #{$pixels/$fontSize}rem;
+}
+// fonction pour appelé les variables dans le css
+@function color($color-name) {
+  @return var(--color-#{$color-name});
+}

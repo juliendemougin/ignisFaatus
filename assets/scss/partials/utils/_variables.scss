@@ -1,0 +1,35 @@
+
+// colors
+
+$colors: (
+  bgColor    : #f8f8f8,// gris clair
+  selected   : #5289A0,// bleu canard
+  footerbg   : #380A44// violet + écriture
+);
+
+$typo: (
+  cursive    : 'Homemade Apple',
+  sans-serif : 'Raleway'
+);
+
+// Transitions
+
+$transitionDefault: .3s all ease-in-out;
+
+// Responsive
+
+$smallScreen   : 640px;
+$mediumScreen  : 960px;
+$largeScreen   : 1240px;
+
+$media_small      :'only screen and (max-width: '$smallScreen')';
+// On ajoute 1 pour éviter les conflits de responsive. Donc ici min-width = 641px
+$media_small_up   :'only screen and (min-width: '$smallScreen + 1')';
+$media_medium_down:'only screen and (max-width: '$mediumScreen')';
+$media_medium_up  :'only screen and (min-width: '$mediumScreen + 1')';
+$media_large_down :'only screen and (max-width: '$largeScreen')';
+
+
+
+
+//

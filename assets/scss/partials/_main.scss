@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&display=swap');
+
+:root {
+  @each $name, $color in $colors {
+    --color-#{$name}: #{$color};
+  }
+}
+
+body {
+  font-family: map-get($typo, sans-serif), sans-serif;
+  font-size: pxToRem(16);
+  line-height: 1.75;
+  font-weight: 300;
+  background-color: color(bgColor);
+}
+
+.single {
+  background-color: color(fontdark);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: map-get($typo, cursive), serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h1, h2 {
+  font-size: pxToRem(34);
+  line-height: 1.2;
+}
+
+h3, h4, h5, h6{
+  text-transform: inherit;
+  letter-spacing: pxToRem(1);
+}
+
+h3 {
+  font-size: pxToRem(28);
+}
+
+h4 {
+  font-size: pxToRem(21);
+}
+
+h5 {
+  font-size: pxToRem(18);
+}
+
+img,
+video {
+  max-width: 100%; //pour être Responsive
+  height:auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: color(darkColor);
+}
+address {font-style: normal;}
+
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: pxToRem(12);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: pxToRem(2);
+  border: 1px solid color(darkColor);
+  .inverse & {
+    border-color: color(lightColor);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//
