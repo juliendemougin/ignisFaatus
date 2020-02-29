@@ -6,7 +6,6 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -306,19 +305,16 @@ template {
   display: none; }
 
 :root {
-  --color-bgColor: #f8f8f8;
-  --color-selected: #5289A0;
-  --color-footerbg: #380A44; }
+  --color-bgColor: #000000;
+  --color-red: #E70236;
+  --color-footerbg: #707070; }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.75;
   font-weight: 300;
   background-color: var(--color-bgColor); }
-
-.single {
-  background-color: var(--color-fontdark); }
 
 *,
 *::before,
@@ -326,7 +322,7 @@ body {
   box-sizing: border-box; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Homemade Apple", serif;
+  font-family: "Bebas Neue", serif;
   font-weight: normal;
   text-transform: uppercase; }
 
@@ -362,14 +358,3 @@ a {
 
 address {
   font-style: normal; }
-
-.btn {
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 0.75rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.125rem;
-  border: 1px solid var(--color-darkColor); }
-  .inverse .btn {
-    border-color: var(--color-lightColor); }
