@@ -8,34 +8,47 @@
     padding: 0;
     align-items: center;
     width: 80%;
-    // height: 111px;
-    li {
+    :nth-child(4) {
+      width: 255px;
       height: 100%;
-      display: flex;
-      h1 {
-        display: block;
-        height: 100%;
-        position: relative;
-        visibility: hidden;
-        text-transform: none;
-        margin: 0;
-        &::before {
-          content: "";
-          position: absolute;
-          align-items: center;
-          height: 111px;
-          width: 109px;
-          background-image: url(assets/img/ignisfatuuslogo.png);
-          visibility: visible;
+      a {
+        width: 100%;
+        &:hover {
+          font-weight: inherit;
+          border-bottom: 0;
+        }
+        h1 {
+          display: block;
+          height: 100%;
+          width: 100%;
+          position: relative;
+          visibility: hidden;
+          text-transform: none;
+          margin: 0;
+          &::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-image: url(assets/img/ignisfatuuslogo.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            visibility: visible;
+          }
         }
       }
+    }
+    height: 147px;
+    li {
+      height: 30%;
+      display: flex;
       a {
         font-family: map-get($typo, Bebas), serif;
-        font-size: pxToRem(24);
+        font-size: pxToRem(28);
+        color: color(footerbg);
         display: flex;
         align-items: center;
         &:hover {
-          font-weight: 700;
           border-bottom: 2px solid color(red);
         }
       }
