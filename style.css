@@ -363,16 +363,14 @@ address {
 .banniere img {
   width: 100%; }
 
-.groupe {
-  position: relative; }
-  .groupe .photoG1 img {
-    width: 60%; }
-  .groupe .text {
-    position: absolute;
-    top: 100px;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.9); }
-  .groupe .photoG2 img {
-    width: 60%; }
-  .groupe .photoG3 img {
-    width: 60%; }
+.groupe .photoG1 img {
+  width: 60%; }
+
+.groupe .text {
+  background-color: rgba(0, 0, 0, 0.9); }
+
+.groupe .photoG2 img {
+  width: 60%; }
+
+.groupe .photoG3 img {
+  width: 60%; }
