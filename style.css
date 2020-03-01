@@ -359,3 +359,45 @@ a {
 
 address {
   font-style: normal; }
+
+.menu {
+  color: white;
+  display: flex;
+  justify-content: center; }
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    align-items: center;
+    width: 80%; }
+    .menu ul li {
+      height: 100%;
+      display: flex; }
+      .menu ul li h1 {
+        display: block;
+        height: 100%;
+        position: relative;
+        visibility: hidden;
+        text-transform: none;
+        margin: 0; }
+        .menu ul li h1::before {
+          content: "";
+          position: absolute;
+          align-items: center;
+          height: 111px;
+          width: 109px;
+          background-image: url(assets/img/ignisfatuuslogo.png);
+          visibility: visible; }
+      .menu ul li a {
+        font-family: "Bebas Neue", serif;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center; }
+        .menu ul li a:hover {
+          font-weight: 700;
+          color: var(--color-selected);
+          border-bottom: 2px solid var(--color-red); }
+      .menu ul li .selected {
+        font-weight: 700;
+        color: var(--color-selected);
+        text-decoration: underline; }
