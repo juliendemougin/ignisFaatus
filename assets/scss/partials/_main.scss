@@ -15,10 +15,6 @@ body {
   background-color: color(bgColor);
 }
 
-.single {
-  background-color: color(fontdark);
-}
-
 *,
 *::before,
 *::after {
@@ -70,18 +66,18 @@ a {
 }
 address {font-style: normal;}
 
-.btn {
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: pxToRem(12);
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: pxToRem(2);
-  border: 1px solid color(darkColor);
-  .inverse & {
-    border-color: color(lightColor);
-  }
-}
+// .btn {
+//   display: inline-block;
+//   padding: 15px 25px;
+//   font-size: pxToRem(12);
+//   font-weight: 400;
+//   text-transform: uppercase;
+//   letter-spacing: pxToRem(2);
+//   border: 1px solid color(darkColor);
+//   .inverse & {
+//     border-color: color(lightColor);
+//   }
+// }
 
 
 
