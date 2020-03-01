@@ -28,9 +28,10 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-h1, h2 {
-  font-size: pxToRem(34);
+h2 {
+  font-size: pxToRem(55);
   line-height: 1.2;
+  margin:0;
 }
 
 h3, h4, h5, h6{

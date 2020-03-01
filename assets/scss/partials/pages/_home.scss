@@ -4,15 +4,33 @@
   }
 }
 
-
 .groupe {
+  width: 80%;
+  margin : auto;
+  :nth-child(odd){
+    display: flex;
+    justify-content: flex-end;
+  }
+  .wspaceg{
+    width: 60%;
+    .wspacerg{
+      width: 76px;
+    }
+  }
+
   .photoG1{
     img{
       width:60%;
     }
   }
   .text{
-    background-color: rgba(0,0,0,.9);
+    // display: flex;
+    // justify-content: flex-end;
+    p{
+      background-color: rgba(0,0,0,.9);
+      width:60%;
+    }
+
   }
   .photoG2{
     img{
@@ -20,8 +38,21 @@
     }
   }
   .photoG3{
+    // display: flex;
+    // justify-content: flex-end;
     img{
       width:60%;
+    }
+  }
+}
+
+.medias,.discographie,.concerts{
+  width: 80%;
+  margin : auto;
+  .wmspace{
+    width: 100%;
+    .wmspacer{
+      width: 76px;
     }
   }
 }

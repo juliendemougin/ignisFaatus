@@ -1,0 +1,13 @@
+.space{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin : 55px 0;
+  .spacer{
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    background-color: color(red);
+    height: 4px;
+  }
+}
