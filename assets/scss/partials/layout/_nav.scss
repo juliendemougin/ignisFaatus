@@ -36,13 +36,11 @@
         align-items: center;
         &:hover {
           font-weight: 700;
-          color: color(selected);
           border-bottom: 2px solid color(red);
         }
       }
       .selected {
         font-weight: 700;
-        color: color(selected);
         text-decoration: underline;
       }
     }
