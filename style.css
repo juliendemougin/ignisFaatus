@@ -359,8 +359,6 @@ a {
 
 address {
   font-style: normal; }
-
-<<<<<<< HEAD
 .menu {
   color: white;
   display: flex;
@@ -402,7 +400,6 @@ address {
         font-weight: 700;
         color: var(--color-selected);
         text-decoration: underline; }
-=======
 .banniere img {
   width: 100%; }
 
@@ -419,4 +416,15 @@ address {
     width: 60%; }
   .groupe .photoG3 img {
     width: 60%; }
+.groupe .photoG1 img {
+  width: 60%; }
+
+.groupe .text {
+  background-color: rgba(0, 0, 0, 0.9); }
+
+.groupe .photoG2 img {
+  width: 60%; }
+
+.groupe .photoG3 img {
+  width: 60%; }
 >>>>>>> refs/remotes/origin/master
