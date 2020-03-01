@@ -419,10 +419,6 @@ address {
         display: flex;
         align-items: center; }
         .menu ul li a:hover {
-<<<<<<< HEAD
-          font-weight: 700;
-=======
->>>>>>> refs/remotes/origin/master
           border-bottom: 2px solid var(--color-red); }
       .menu ul li .selected {
         font-weight: 700;
