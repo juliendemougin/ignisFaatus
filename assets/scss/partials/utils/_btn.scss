@@ -1,43 +1,10 @@
-.btnav{
-  display: flex;
-  justify-content: space-around;
-  padding: 40px 40px 0 40px;
-
-  .btnav1,
-  .btnav2,
-  .btnav3{
-    padding: 10px;
-    font-size: pxToRem(15);
-    text-align: center;
-    border-radius: 9px;
-    &:hover{
-      background-color: color(selected);
-      border: 1px solid color(footerbg);
-    }
+.btn{
+  padding:10px;
+  font-size: pxToRem(25);
+  background-color: color(red);
+  &:hover{
+    background-color: white;
+    color:color(red);
+    border: 1px solid color(red);
   }
-  .btnav1{
-    color: color(footerbg);
-    background-color: color(bgColor);
-    border: 1px solid color(footerbg);
-    &:hover{
-      color: color(bgColor);
-    }
-  }
-  .btnav2{
-    color: color(bgColor);
-    background-color: color(selected);
-    border: 1px solid color(selected);
-  }
-  .btnav3{
-    color: color(bgColor);
-    background-color: color(selected);
-    border: 1px solid color(selected);
-    &:hover{
-      background-color: color(footerbg);
-    }
-  }
-}
-.fullWidth{
-  width: 100%;
-  margin-bottom: 5%;
 }
