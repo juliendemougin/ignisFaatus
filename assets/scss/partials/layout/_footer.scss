@@ -1,26 +1,39 @@
 footer{
+  height: 138px;
   background-color: color(footerbg);
   display: flex;
   justify-content: space-around;
 
-  .mentions,.copyright {
+  .mentions {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-    .mentions{
-      width: 50%;
-      font-family: map-get($typo, Bebas), sans-serif;
+    justify-content:flex-end;
+    width: 50%;
+    font-family: map-get($typo, Bebas), sans-serif;
+    font-size: pxToRem(12);
+    p{
+      margin: 0;
+      letter-spacing: 2px;
       span{
       font-family: map-get($typo, Roboto), sans-serif;
+      letter-spacing: normal;
+      &:hover{
+        text-decoration: underline;
+      }
       }
     }
+  }
 .button{
   display: flex;
   justify-content: center;
   align-items: center;
+  .btnf{
+    padding:0 10px;
+    height: 40px;
+    text-align: center;
+  }
 }
-
 
   .socialMedia{
     width: 10%;

@@ -1,6 +1,6 @@
 .btn{
-  font-family: map-get($typo, Bebas), sans-serif; 
-  padding:10px;
+  padding: 9px 10px 5px 10px;
+  font-family: map-get($typo, Bebas), sans-serif;
   font-size: pxToRem(25);
   background-color: color(red);
   &:hover{

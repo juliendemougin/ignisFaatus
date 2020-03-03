@@ -17,8 +17,8 @@
     width: 76px; }
 
 .btn {
+  padding: 9px 10px 5px 10px;
   font-family: "Bebas Neue", sans-serif;
-  padding: 10px;
   font-size: 1.5625rem;
   background-color: var(--color-red); }
   .btn:hover {
@@ -440,22 +440,34 @@ address {
         text-decoration: underline; }
 
 footer {
+  height: 138px;
   background-color: var(--color-footerbg);
   display: flex;
   justify-content: space-around; }
-  footer .mentions, footer .copyright {
+  footer .mentions {
     display: flex;
     flex-direction: column;
-    align-items: center; }
-  footer .mentions {
+    align-items: center;
+    justify-content: flex-end;
     width: 50%;
-    font-family: "Bebas Neue", sans-serif; }
-    footer .mentions span {
-      font-family: "Roboto", sans-serif; }
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 0.75rem; }
+    footer .mentions p {
+      margin: 0;
+      letter-spacing: 2px; }
+      footer .mentions p span {
+        font-family: "Roboto", sans-serif;
+        letter-spacing: normal; }
+        footer .mentions p span:hover {
+          text-decoration: underline; }
   footer .button {
     display: flex;
     justify-content: center;
     align-items: center; }
+    footer .button .btnf {
+      padding: 0 10px;
+      height: 40px;
+      text-align: center; }
   footer .socialMedia {
     width: 10%;
     display: flex;
