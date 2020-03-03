@@ -24,8 +24,6 @@
     }
   }
   .text{
-    // display: flex;
-    // justify-content: flex-end;
     p{
       background-color: rgba(0,0,0,.9);
       width:60%;
@@ -38,8 +36,6 @@
     }
   }
   .photoG3{
-    // display: flex;
-    // justify-content: flex-end;
     img{
       width:60%;
     }
@@ -49,10 +45,23 @@
 .medias,.discographie,.concerts{
   width: 80%;
   margin : auto;
-  .wmspace{
-    width: 100%;
-    .wmspacer{
-      width: 76px;
+
+}
+
+iframe{
+      align-items: center;
+    }
+
+.discographie{
+  img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 260px;
+    height: 260px;
+    &:hover{
+      background-color: rgba (255,255,255,.8);
+      border: 1px solid color(red);
     }
   }
 }

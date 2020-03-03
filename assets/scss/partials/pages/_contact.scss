@@ -1,0 +1,23 @@
+.contact{
+  p{
+    width:80%;
+    margin : auto;
+  }
+}
+
+.formulaire{
+  background-color: rgba(112,112,112,.3);
+  width: 80%;
+  margin: auto;
+
+  .civilite,.nom,.coordonnees{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+  }
+  .Message{
+    display: flex;
+    align-items: center;
+  }
+
+}

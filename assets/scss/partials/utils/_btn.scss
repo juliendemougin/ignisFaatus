@@ -1,4 +1,5 @@
 .btn{
+  font-family: map-get($typo, Bebas), sans-serif; 
   padding:10px;
   font-size: pxToRem(25);
   background-color: color(red);

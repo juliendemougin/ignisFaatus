@@ -11,7 +11,13 @@
     background-color: var(--color-red);
     height: 4px; }
 
+.wmspace {
+  width: 100%; }
+  .wmspace .wmspacer {
+    width: 76px; }
+
 .btn {
+  font-family: "Bebas Neue", sans-serif;
   padding: 10px;
   font-size: 1.5625rem;
   background-color: var(--color-red); }
@@ -433,6 +439,31 @@ address {
         font-weight: 700;
         text-decoration: underline; }
 
+footer {
+  background-color: var(--color-footerbg);
+  display: flex;
+  justify-content: space-around; }
+  footer .mentions, footer .copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  footer .mentions {
+    width: 50%;
+    font-family: "Bebas Neue", sans-serif; }
+    footer .mentions span {
+      font-family: "Roboto", sans-serif; }
+  footer .button {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  footer .socialMedia {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    footer .socialMedia i:hover {
+      color: var(--color-red); }
+
 .banniere img {
   width: 100%; }
 
@@ -459,7 +490,32 @@ address {
 .medias, .discographie, .concerts {
   width: 80%;
   margin: auto; }
-  .medias .wmspace, .discographie .wmspace, .concerts .wmspace {
-    width: 100%; }
-    .medias .wmspace .wmspacer, .discographie .wmspace .wmspacer, .concerts .wmspace .wmspacer {
-      width: 76px; }
+
+iframe {
+  align-items: center; }
+
+.discographie img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 260px;
+  height: 260px; }
+  .discographie img:hover {
+    background-color: rgba 255, 255, 255, 0.8;
+    border: 1px solid var(--color-red); }
+
+.contact p {
+  width: 80%;
+  margin: auto; }
+
+.formulaire {
+  background-color: rgba(112, 112, 112, 0.3);
+  width: 80%;
+  margin: auto; }
+  .formulaire .civilite, .formulaire .nom, .formulaire .coordonnees {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .formulaire .Message {
+    display: flex;
+    align-items: center; }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ignis Fatuus - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6f0e7bdd3b.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="menu">
+        <ul>
+          <li><a href="#Legroupe">le groupe</a></li>
+          <li><a href="#Discographie">discographie</a></li>
+          <li><a href="#Concerts">concerts</a></li>
+          <li><a href="#"><h1>Ignis Fatuus</h1></a></li>
+          <li><a href="#Medias">media</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">shop</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="contact">
+        <div class="space wmspace">
+          <h2>Contactez-nous</h2>
+          <div class="spacer wmspacer"></div>
+        </div>
+        <p>Vous avez une question à nous poser ? Vous souhaitez des informations sur nos produits ? Pour toute demande, contactez nous via ce formulaire. C’est avec plaisir que nous répondrons à vos interrogations.</p>
+      </div>
+
+      <div class="formulaire">
+        <form action="/my-handling-form-page" method="post">
+          <div class="civilite">
+            <div>
+              <input type="radio" id="Madame" name="civilite" value="Madame"
+                     checked>
+              <label for="Madame">Madame</label>
+            </div>
+            <div>
+              <input type="radio" id="Monsieur" name="civilite" value="Monsieur"
+                     checked>
+              <label for="Monsieur">Monsieur</label>
+            </div>
+          </div>
+
+          <div class="nom">
+            <div>
+              <label for="name">Nom :</label>
+              <input type="text" id="lastname" name="user_name">
+            </div>
+            <div>
+              <label for="name">Prénom :</label>
+              <input type="text" id="firstname" name="user_name">
+            </div>
+            <div>
+              <label for="name">Société :</label>
+              <input type="text" id="company" name="user_company">
+            </div>
+            </div>
+
+          <div class="coordonnees">
+            <div>
+              <label for="mail">e-mail :</label>
+              <input type="email" id="mail" name="user_mail">
+            </div>
+            <div>
+              <label for="mail">Téléphone :</label>
+              <input type="number" id="phone" name="user_phonenumber">
+            </div>
+
+          <div class="Message">
+            <div>
+              <label for="name">Objet :</label>
+              <input type="text" id="object" name="user_object">
+            </div>
+            <div>
+            <label for="msg">Message :</label>
+            <textarea id="msg" name="user_message"></textarea>
+            </div>
+          </div>
+        </div>
+      </form>
+            <a class="btn" href="#">Envoyer</a>
+      </div>
+    </main>
+  </body>
+
+  <footer>
+    <div class="button">
+      <a class="btn" href="#">Contactez-nous</a>
+    </div>
+
+    <div class="mentions">
+      <p>Conception : <span><a href="http://katiaparisot.fr/">Katia PARISOT</a></span>  Développement : <span><a href="https://juliendemougin.fr">Julien DEMOUGIN</a></span></p>
+      <p class=copyright><span><a href="">© Ignis Fatuus </a><label id="year_copy"></label></span></p>
+    </div>
+    <ul class="socialMedia">
+      <li><a href="#"><i class="fab fa-facebook-f fa-x2"></i></a></li>
+      <li><a href="#"></a><i class="fab fa-youtube fa-x2"></i></li>
+    </ul>
+  </footer>
+</html>
