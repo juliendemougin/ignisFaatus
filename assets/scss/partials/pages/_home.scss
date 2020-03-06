@@ -42,26 +42,36 @@
   }
 }
 
-.medias,.discographie,.concerts{
+.medias,.discographie,.concerts,.video{
   width: 80%;
   margin : auto;
 
 }
 
-iframe{
-      align-items: center;
-    }
+.video{
+  display: flex;
+  justify-content: center;
+  iframe{
+    width: 840px;
+    height: 473px;
+  }
+}
 
 .discographie{
-  img{
+  display: flex;
+  flex-direction: column;
+  .albums{
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 260px;
-    height: 260px;
-    &:hover{
-      background-color: rgba (255,255,255,.8);
-      border: 1px solid color(red);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    img{
+      width: 260px;
+      height: 260px;
+      margin: 15px 0;
+      &:hover{
+        background-color: rgba(255,255,255,.8);
+        border: 1px solid color(red);
+      }
     }
   }
 }

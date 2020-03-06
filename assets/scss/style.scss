@@ -4,6 +4,8 @@
 @import "./partials/utils/mixins";
 @import "./partials/utils/space";
 @import "./partials/utils/btn";
+@import "./partials/utils/navPanier";
+
 
 @import "./partials/vendors/normalize";
 
@@ -15,3 +17,5 @@
 
 @import "./partials/pages/home";
 @import "./partials/pages/contact";
+@import "./partials/pages/accueilshop";
+@import "./partials/pages/panier";

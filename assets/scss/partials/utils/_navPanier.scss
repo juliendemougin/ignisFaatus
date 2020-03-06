@@ -1,0 +1,39 @@
+.navpanier{
+  position: relative;
+  height:200px;
+  width: 50%;
+  margin : auto;
+  ul{
+    z-index: 10;
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    li{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+      img{
+        width: 60px;
+        height:80px;
+        margin-bottom: 10px;
+      }
+      p{
+        margin: 0;
+        font-family: map-get($typo, Bebas), serif;
+      }
+      .encours{
+        color: color(red);
+      }
+    }
+  }
+  .linethrough{
+    position: absolute;
+    width: 100%;
+    top:30%;
+    left:0;
+  }
+}
