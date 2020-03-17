@@ -565,50 +565,103 @@ footer {
   width: 80%;
   margin: auto;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  /* Hide the browser's default radio button */
+  /* Create a custom radio button */
+  /* On mouse-over, add a grey background color */
+  /* When the radio button is checked, add a blue background */
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  /* Show the indicator (dot/circle) when checked */
+  /* Style the indicator (dot/circle) */ }
+  .formulaire .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .formulaire .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer; }
+  .formulaire .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #707070;
+    border-radius: 50%; }
+  .formulaire .container:hover input ~ .checkmark:after {
+    display: block; }
+  .formulaire .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none; }
+  .formulaire .container input:checked ~ .checkmark:after {
+    display: block; }
+  .formulaire .container .checkmark:after {
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #707070; }
   .formulaire .btnform {
     text-align: right; }
 
 /*************************/
 /***** Bouton radio ******/
 /*************************/
-.cont {
+/*////////////////////////*/
+/*.cont{
   display: block;
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-  .cont input {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  input{
     position: absolute;
     opacity: 0;
-    cursor: pointer; }
-  .cont .chekmark {
+    cursor: pointer;
+
+  }
+  .chekmark{
     position: absolute;
     top: 0;
     left: 0;
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    border: 2px solid #707070; }
-    .cont .chekmark::after {
+    border: 2px solid #707070;
+    &::after{
       content: "";
       position: absolute;
-      display: none; }
-    .cont .chekmark input:checked ~ .chekmark:after {
-      display: block; }
-    .cont .chekmark .chekmark:after {
+      display: none;
+
+    }
+    input:checked ~ .chekmark:after {
+      display: block;
+    }
+    .chekmark:after {
       top: 4px;
       left: 4px;
       width: 12px;
       height: 12px;
       border-radius: 50%;
-      background: #707070; }
-
+      background: #707070;
+    }
+  }
+}*/
 .produits {
   width: 75%;
   margin: auto;
