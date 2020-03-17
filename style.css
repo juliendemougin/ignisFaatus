@@ -565,103 +565,97 @@ footer {
   width: 80%;
   margin: auto;
   display: flex;
-  justify-content: center;
-  /* Hide the browser's default radio button */
-  /* Create a custom radio button */
-  /* On mouse-over, add a grey background color */
-  /* When the radio button is checked, add a blue background */
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  /* Show the indicator (dot/circle) when checked */
-  /* Style the indicator (dot/circle) */ }
-  .formulaire .container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; }
-  .formulaire .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer; }
-  .formulaire .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    border: 2px solid #707070;
-    border-radius: 50%; }
-  .formulaire .container:hover input ~ .checkmark:after {
-    display: block; }
-  .formulaire .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none; }
-  .formulaire .container input:checked ~ .checkmark:after {
-    display: block; }
-  .formulaire .container .checkmark:after {
-    top: 2px;
-    left: 2px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #707070; }
-  .formulaire .btnform {
-    text-align: right; }
+  justify-content: center; }
+  .formulaire form {
+    font-family: "Bebas Neue", sans-serif;
+    width: 50%; }
+    .formulaire form .champs {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap; }
+      .formulaire form .champs .civilite {
+        color: #707070;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+        width: 30%;
+        margin: auto;
+        /* Hide the browser's default radio button */
+        /* Create a custom radio button */
+        /* On mouse-over, add a grey background color */
+        /* Create the indicator (the dot/circle - hidden when not checked) */
+        /* Show the indicator (dot/circle) when checked */
+        /* Style the indicator (dot/circle) */ }
+        .formulaire form .champs .civilite .container {
+          display: block;
+          position: relative;
+          padding-left: 35px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          font-size: 16px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none; }
+        .formulaire form .champs .civilite .container input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer; }
+        .formulaire form .champs .civilite .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 20px;
+          width: 20px;
+          border: 2px solid #707070;
+          border-radius: 50%; }
+        .formulaire form .champs .civilite .container:hover input ~ .checkmark {
+          display: block; }
+        .formulaire form .champs .civilite .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none; }
+        .formulaire form .champs .civilite .container input:checked ~ .checkmark:after {
+          display: block; }
+        .formulaire form .champs .civilite .container .checkmark:after {
+          top: 2px;
+          left: 2px;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: #707070; }
+      .formulaire form .champs div {
+        width: 30%;
+        margin: auto; }
+        .formulaire form .champs div input[type=text], .formulaire form .champs div [type=email], .formulaire form .champs div [type=number] {
+          padding: 4px 10px;
+          margin: 8px 0;
+          box-sizing: border-box;
+          border: none;
+          border-bottom: 1px solid white;
+          background-color: transparent; }
+    .formulaire form .message {
+      width: 97%;
+      margin: auto; }
+      .formulaire form .message input[type=text] {
+        width: 100%;
+        padding: 4px 10px;
+        margin: 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 1px solid white;
+        background-color: transparent; }
+      .formulaire form .message textarea {
+        width: 100%;
+        padding: 4px 10px;
+        margin: 0;
+        margin-top: 40px;
+        box-sizing: border-box;
+        border: 1px solid white;
+        background-color: transparent; }
+    .formulaire form .btnform {
+      text-align: right; }
 
-/*************************/
-/***** Bouton radio ******/
-/*************************/
-/*////////////////////////*/
-/*.cont{
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none;
-  input{
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-
-  }
-  .chekmark{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: 2px solid #707070;
-    &::after{
-      content: "";
-      position: absolute;
-      display: none;
-
-    }
-    input:checked ~ .chekmark:after {
-      display: block;
-    }
-    .chekmark:after {
-      top: 4px;
-      left: 4px;
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background: #707070;
-    }
-  }
-}*/
 .produits {
   width: 75%;
   margin: auto;
