@@ -566,49 +566,54 @@ footer {
   margin: auto;
   display: flex;
   justify-content: center; }
-  .formulaire .btnform {
-    text-align: right; }
+  .formulaire form {
+    font-family: "Bebas Neue", sans-serif;
+    width: 50%; }
+    .formulaire form .champs {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap; }
+      .formulaire form .champs .civilite {
+        color: #707070;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+        width: 30%;
+        margin: auto; }
+      .formulaire form .champs div {
+        width: 30%;
+        margin: auto; }
+        .formulaire form .champs div input[type=text], .formulaire form .champs div [type=email], .formulaire form .champs div [type=number] {
+          padding: 4px 10px;
+          margin: 8px 0;
+          box-sizing: border-box;
+          border: none;
+          border-bottom: 1px solid white;
+          background-color: transparent; }
+    .formulaire form .message {
+      width: 97%;
+      margin: auto; }
+      .formulaire form .message input[type=text] {
+        width: 100%;
+        padding: 4px 10px;
+        margin: 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 1px solid white;
+        background-color: transparent; }
+      .formulaire form .message textarea {
+        width: 100%;
+        padding: 4px 10px;
+        margin: 0;
+        box-sizing: border-box;
+        border: 1px solid white;
+        background-color: transparent; }
+    .formulaire form .btnform {
+      text-align: right; }
 
 /*************************/
-/***** Bouton radio ******/
+/***** Champs ******/
 /*************************/
-.cont {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-  .cont input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer; }
-  .cont .chekmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: 2px solid #707070; }
-    .cont .chekmark::after {
-      content: "";
-      position: absolute;
-      display: none; }
-    .cont .chekmark input:checked ~ .chekmark:after {
-      display: block; }
-    .cont .chekmark .chekmark:after {
-      top: 4px;
-      left: 4px;
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background: #707070; }
-
 .produits {
   width: 75%;
   margin: auto;
