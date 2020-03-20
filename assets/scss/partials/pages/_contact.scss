@@ -10,6 +10,7 @@
   background-color: rgba(112,112,112,.3);
   width: 80%;
   margin: auto;
+  padding: 30px 0;
   display: flex;
   justify-content: center;
   form {
@@ -20,7 +21,7 @@
       display: flex;
       flex-wrap: wrap;
       .civilite{
-        color:rgb(112,112,112);
+        color:#707070;
         display: flex;
         justify-content: space-between;
         font-size: pxToRem(16);
@@ -29,8 +30,7 @@
         .container {
           display: block;
           position: relative;
-          padding-left: 35px;
-          margin-bottom: 12px;
+          padding-left: 23px;
           cursor: pointer;
           font-size: 16px;
           -webkit-user-select: none;
@@ -88,39 +88,68 @@
           width: 30%;
           margin: auto;
           input[type=text],[type=email],[type=number]{
+            font-family: map-get($typo, Roboto), sans-serif;
+            color: #707070;
+            width: 100%;
             padding:4px 10px;
             margin: 8px 0;
             box-sizing:border-box;
             border: none;
-            border-bottom:1px solid white;
+            border-bottom:1px solid rgb(112,112,112);
             background-color: transparent;
+            &::placeholder{
+              font-family: map-get($typo, Bebas), serif;
+            }
+            &:focus{
+              outline: none;
+            }
           }
         }
 
     }
     .message{
-      width: 97%;
+      width: 96%;
       margin: auto;
       input[type=text]{
         width: 100%;
         padding:4px 10px;
         margin: 0;
+        margin-top: 10px;
         box-sizing:border-box;
         border: none;
-        border-bottom:1px solid white;
+        border-bottom:1px solid rgb(112,112,112);
         background-color: transparent;
+        color: #707070;
+        font-family: map-get($typo, Roboto), sans-serif;
+        &::placeholder{
+          font-family: map-get($typo, Bebas), serif;
+        }
+        &:focus{
+          outline: none;
+        }
       }
       textarea{
+        color: #707070;
+        font-family: map-get($typo, Roboto), sans-serif;
         width: 100%;
+        min-height: 115px;
         padding:4px 10px;
         margin: 0;
         margin-top: 40px;
         box-sizing:border-box;
-        border:1px solid white;
+        border:1px solid rgb(112,112,112);
         background-color: transparent;
+        &::placeholder{
+          font-family: map-get($typo, Bebas), serif;
+        }
+        &:focus{
+          outline: none;
+        }
       }
     }
     .btnform{
+      width: 96%;
+      margin-top: 20px;
       text-align: right;
     }
   }

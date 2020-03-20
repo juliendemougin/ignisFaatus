@@ -564,6 +564,7 @@ footer {
   background-color: rgba(112, 112, 112, 0.3);
   width: 80%;
   margin: auto;
+  padding: 30px 0;
   display: flex;
   justify-content: center; }
   .formulaire form {
@@ -589,8 +590,7 @@ footer {
         .formulaire form .champs .civilite .container {
           display: block;
           position: relative;
-          padding-left: 35px;
-          margin-bottom: 12px;
+          padding-left: 23px;
           cursor: pointer;
           font-size: 16px;
           -webkit-user-select: none;
@@ -628,32 +628,55 @@ footer {
         width: 30%;
         margin: auto; }
         .formulaire form .champs div input[type=text], .formulaire form .champs div [type=email], .formulaire form .champs div [type=number] {
+          font-family: "Roboto", sans-serif;
+          color: #707070;
+          width: 100%;
           padding: 4px 10px;
           margin: 8px 0;
           box-sizing: border-box;
           border: none;
-          border-bottom: 1px solid white;
+          border-bottom: 1px solid #707070;
           background-color: transparent; }
+          .formulaire form .champs div input[type=text]::placeholder, .formulaire form .champs div [type=email]::placeholder, .formulaire form .champs div [type=number]::placeholder {
+            font-family: "Bebas Neue", serif; }
+          .formulaire form .champs div input[type=text]:focus, .formulaire form .champs div [type=email]:focus, .formulaire form .champs div [type=number]:focus {
+            outline: none; }
     .formulaire form .message {
-      width: 97%;
+      width: 96%;
       margin: auto; }
       .formulaire form .message input[type=text] {
         width: 100%;
         padding: 4px 10px;
         margin: 0;
+        margin-top: 10px;
         box-sizing: border-box;
         border: none;
-        border-bottom: 1px solid white;
-        background-color: transparent; }
+        border-bottom: 1px solid #707070;
+        background-color: transparent;
+        color: #707070;
+        font-family: "Roboto", sans-serif; }
+        .formulaire form .message input[type=text]::placeholder {
+          font-family: "Bebas Neue", serif; }
+        .formulaire form .message input[type=text]:focus {
+          outline: none; }
       .formulaire form .message textarea {
+        color: #707070;
+        font-family: "Roboto", sans-serif;
         width: 100%;
+        min-height: 115px;
         padding: 4px 10px;
         margin: 0;
         margin-top: 40px;
         box-sizing: border-box;
-        border: 1px solid white;
+        border: 1px solid #707070;
         background-color: transparent; }
+        .formulaire form .message textarea::placeholder {
+          font-family: "Bebas Neue", serif; }
+        .formulaire form .message textarea:focus {
+          outline: none; }
     .formulaire form .btnform {
+      width: 96%;
+      margin-top: 20px;
       text-align: right; }
 
 .produits {
