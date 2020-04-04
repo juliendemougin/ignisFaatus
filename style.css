@@ -468,6 +468,55 @@ address {
         font-weight: 700;
         text-decoration: underline; }
 
+.menuShop {
+  color: white;
+  display: flex;
+  justify-content: center; }
+  .menuShop ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+    width: 90%;
+    height: 147px; }
+    .menuShop ul :nth-child(1) {
+      width: 40%; }
+    .menuShop ul :nth-child(2) {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center; }
+      .menuShop ul :nth-child(2) a {
+        width: 100%; }
+        .menuShop ul :nth-child(2) a:hover {
+          font-weight: inherit;
+          border-bottom: 0; }
+        .menuShop ul :nth-child(2) a img {
+          height: 100%;
+          width: auto; }
+        .menuShop ul :nth-child(2) a h1 {
+          text-indent: -9999999px; }
+    .menuShop ul li {
+      height: 100%;
+      width: 20%;
+      display: flex;
+      justify-content: center; }
+      .menuShop ul li a {
+        font-family: "Bebas Neue", serif;
+        font-size: 1.75rem;
+        color: var(--color-footerbg);
+        display: flex;
+        align-items: center;
+        flex-direction: column; }
+        .menuShop ul li a p {
+          margin: 0;
+          text-align: center; }
+          .menuShop ul li a p:hover {
+            border-bottom: 2px solid var(--color-red); }
+      .menuShop ul li .selected {
+        font-weight: 700;
+        text-decoration: underline; }
+
 footer {
   height: 138px;
   background-color: var(--color-footerbg);

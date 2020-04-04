@@ -1,4 +1,4 @@
-.menu {
+.menuShop {
   color: white;
   display: flex;
   justify-content: center;
@@ -9,7 +9,10 @@
     align-items: center;
     width: 90%;
     height: 147px;
-    :nth-child(4) {
+    :nth-child(1) {
+      width: 40%;
+    }
+    :nth-child(2) {
       width: 100%;
       height: 100%;
       display: flex;
@@ -21,17 +24,17 @@
           border-bottom: 0;
         }
         img {
-          width: 100%;
+          height: 100%;
+          width: auto;
         }
         h1 {
           text-indent: -9999999px;
         }
-
       }
     }
     li {
-      height: 30%;
-      width: 60%;
+      height: 100%;
+      width: 20%;
       display: flex;
       justify-content: center;
       a {
@@ -40,8 +43,13 @@
         color: color(footerbg);
         display: flex;
         align-items: center;
-        &:hover {
-          border-bottom: 2px solid color(red);
+        flex-direction: column;
+        p {
+          margin: 0;
+          text-align: center;
+          &:hover {
+            border-bottom: 2px solid color(red);
+          }
         }
       }
       .selected {
