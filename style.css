@@ -595,12 +595,32 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; }
-    .discographie .albums img {
-      width: 260px;
-      height: 260px;
-      margin: 15px 0; }
-      .discographie .albums img:hover {
-        background-color: rgba(255, 255, 255, 0.8);
+    .discographie .albums .album {
+      position: relative; }
+      .discographie .albums .album img {
+        width: 260px;
+        height: 260px;
+        margin: 15px 0; }
+      .discographie .albums .album .description {
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 260px;
+        height: 260px;
+        margin: 15px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; }
+        .discographie .albums .album .description .sep {
+          height: 2px;
+          width: 20px;
+          background-color: var(--color-red); }
+      .discographie .albums .album:hover .description {
+        visibility: visible;
+        background-color: rgba(0, 0, 0, 0.7);
         border: 1px solid var(--color-red); }
 
 .contact {
